@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mimaf_in_window</class>
+ <widget class="QMainWindow" name="mimaf_in_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>837</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget{background-color:rgb(26, 41, 59);
+
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_19">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_15">
+      <item>
+       <widget class="QFrame" name="frame_8">
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>560</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_8{background-color:rgb(26, 41, 59);
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_16">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_9">
+           <property name="styleSheet">
+            <string notr="true">QFrame#frame_9{
+background-color:rgb(32, 50, 71);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>170</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="button_home">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+font: 15pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: rgb(18, 39, 64);
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(36, 95, 163);
+border-radius:10px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(36, 96, 163), stop:1 rgb(101, 166, 240));
+}
+
+QPushButton:pressed{
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>Home</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_import_molecule">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+font: 15pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: rgb(18, 39, 64);
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(36, 95, 163);
+border-radius:10px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(36, 96, 163), stop:1 rgb(101, 166, 240));
+}
+
+QPushButton:pressed{
+border-style: inset;
+}</string>
+           </property>
+           <property name="text">
+            <string>Import Molecule</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_grid">
+           <property name="styleSheet">
+            <string notr="true">QFrame#frame_grid{
+background-color: rgb(39, 60, 84);
+color:rgb(255, 68, 0);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+font: 14pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+border-style:outset;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+}</string>
+                </property>
+                <property name="text">
+                 <string>Grid System</string>
+                </property>
+                <property name="margin">
+                 <number>6</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Size :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Minimum</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>64</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="line_edit_grid_size">
+                     <property name="styleSheet">
+                      <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);</string>
+                     </property>
+                     <property name="text">
+                      <string>Step :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Minimum</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>58</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="line_edit_grid_step">
+                     <property name="styleSheet">
+                      <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="label_5">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);</string>
+                     </property>
+                     <property name="text">
+                      <string>Max Ghosts:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="edit_max_ghosts">
+                     <property name="styleSheet">
+                      <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2d_3d">
+           <property name="styleSheet">
+            <string notr="true">QFrame#frame_2d_3d {
+font: 14pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_18">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_14">
+              <item>
+               <widget class="QLabel" name="label_9">
+                <property name="styleSheet">
+                 <string notr="true">font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);</string>
+                </property>
+                <property name="text">
+                 <string>Grid Type</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radio_2d">
+                <property name="styleSheet">
+                 <string notr="true">QRadioButton{
+font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                </property>
+                <property name="text">
+                 <string>2D</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radio_3d">
+                <property name="styleSheet">
+                 <string notr="true">QRadioButton{
+font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                </property>
+                <property name="text">
+                 <string>3D</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QStackedWidget" name="stacked_dims">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page_2d">
+               <property name="styleSheet">
+                <string notr="true">QWidget#page_2d
+{
+background-color: rgb(39, 60, 84);
+color:rgb(255, 68, 0);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frame_11">
+                  <property name="styleSheet">
+                   <string notr="true">QFrame#frame_11
+{
+border-style:outset;
+border-bottom-width:2px;
+border-radius:10px;
+border-color: rgb(47, 78, 115);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);</string>
+                     </property>
+                     <property name="text">
+                      <string>Orientation</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                     <property name="leftMargin">
+                      <number>20</number>
+                     </property>
+                     <item>
+                      <widget class="QRadioButton" name="radio_xy2d">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>xy</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_xz2d">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>xz</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_yz2d">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>yz</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_12">
+                  <property name="styleSheet">
+                   <string notr="true">QFrame#frame_12
+{
+border-style:outset;
+border-bottom-width:2px;
+border-radius:10px;
+border-color: rgb(47, 78, 115);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);</string>
+                     </property>
+                     <property name="text">
+                      <string>Symmetry </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <item>
+                      <widget class="QRadioButton" name="radio_full2d_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Full</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_2dxyz_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Quarter</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_20">
+                     <item>
+                      <widget class="QRadioButton" name="radio_2dside_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Side</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_2dtop_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Top</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_3d">
+               <property name="styleSheet">
+                <string notr="true">QWidget#page_3d
+{
+background-color: rgb(39, 60, 84);
+color:rgb(255, 68, 0);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>30</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>30</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frame_3">
+                  <property name="styleSheet">
+                   <string notr="true">QFrame#frame_3
+{
+border-style:outset;
+border-bottom-width:2px;
+border-radius:10px;
+border-color: rgb(47, 78, 115);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QLabel" name="label_16">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);</string>
+                     </property>
+                     <property name="text">
+                      <string>Cube Symmetry</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>15</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_6">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QRadioButton" name="radio_full_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Full</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_x_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>x</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_y_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>y</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_z_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>z</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_5">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Minimum</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>100</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                     <item>
+                      <widget class="QRadioButton" name="radio_xy_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>xy</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_xz_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>xz</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_yz_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>yz</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="radio_xyz_sym">
+                       <property name="styleSheet">
+                        <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>xyz</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_4">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_7">
+        <property name="minimumSize">
+         <size>
+          <width>510</width>
+          <height>560</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>510</width>
+          <height>560</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(36, 96, 163), stop:1 rgb(101, 166, 240));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_17">
+         <property name="leftMargin">
+          <number>4</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <item>
+          <widget class="QOpenGLWidget" name="openGLWidget">
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>550</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_18">
+      <item>
+       <widget class="QFrame" name="frame_5">
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_5{
+background-color: rgb(39, 60, 84);
+color:rgb(255, 68, 0);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+               </property>
+               <property name="text">
+                <string>Method</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="styleSheet">
+                <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+               </property>
+               <property name="text">
+                <string>Basis Set</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="styleSheet">
+                <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+               </property>
+               <property name="text">
+                <string>Charge</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLineEdit" name="edit_method">
+               <property name="styleSheet">
+                <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="edit_basis_set">
+               <property name="styleSheet">
+                <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="edit_charge">
+               <property name="styleSheet">
+                <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="styleSheet">
+                <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+               </property>
+               <property name="text">
+                <string>Criteria</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="styleSheet">
+                <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+               </property>
+               <property name="text">
+                <string>%mem</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="styleSheet">
+                <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);
+
+</string>
+               </property>
+               <property name="text">
+                <string>%nproc</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLineEdit" name="edit_criteria">
+               <property name="styleSheet">
+                <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="edit_memory">
+               <property name="styleSheet">
+                <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="edit_nproc">
+               <property name="styleSheet">
+                <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(21, 26, 31);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_6">
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_6{
+background-color:rgb(39, 60, 84);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_13">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QCheckBox" name="checkbox_axis">
+             <property name="styleSheet">
+              <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);</string>
+             </property>
+             <property name="text">
+              <string>Axis</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="hmodel_check">
+             <property name="styleSheet">
+              <string notr="true">font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);</string>
+             </property>
+             <property name="text">
+              <string>hmodel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_13">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_13{
+background-color:rgb(26, 41, 59);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_24">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_16">
+         <property name="styleSheet">
+          <string notr="true">QFrame#frame_16{
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(18, 39, 64), stop:1 rgb(10, 23, 38));
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_29">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_27">
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);</string>
+              </property>
+              <property name="text">
+               <string>Analysis</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_22">
+              <property name="styleSheet">
+               <string notr="true">QFrame#frame_22{
+background-color:rgb(39, 60, 84);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_28">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_23">
+                 <item>
+                  <widget class="QRadioButton" name="radio_nbo">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Nbo/Nlmo</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radio_cmo">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Cmo</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QRadioButton" name="radio_both">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Both</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="radio_none">
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+font: 11pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>None</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="styleSheet">
+          <string notr="true">QFrame#frame_4{
+background-color: rgb(39, 60, 84);
+color:rgb(255, 68, 0);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="styleSheet">
+               <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);</string>
+              </property>
+              <property name="text">
+               <string>Create Runs : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="button_gaussian">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+font: 15pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: rgb(18, 39, 64);
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(36, 95, 163);
+border-radius:10px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(36, 96, 163), stop:1 rgb(101, 166, 240));
+}
+
+QPushButton:pressed{
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>Gaussian</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="button_adf">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+font: 15pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: rgb(18, 39, 64);
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(36, 95, 163);
+border-radius:10px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(36, 96, 163), stop:1 rgb(101, 166, 240));
+}
+
+QPushButton:pressed{
+border-style: inset;
+}</string>
+              </property>
+              <property name="text">
+               <string>ADF</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="styleSheet">
+          <string notr="true">QTextBrowser#textBrowser{
+background-color:rgb(39, 60, 84);
+border-style:outset;
+border-width:3px;
+border-color: rgb(16,26,38);
+font: 11pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

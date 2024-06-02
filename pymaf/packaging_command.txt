@@ -1,0 +1,1 @@
+pyinstaller --windowed --add-data="main_menu.ui;." --add-data="imf_window.ui;." --add-data="mimaf_in_window.ui;." --add-data="mimaf_view.ui;." --add-data="utilities.ui;." quantum_gui.py
