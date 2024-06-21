@@ -78,7 +78,7 @@ class Mimaf_In_Window(QtWidgets.QMainWindow):
 
         self.ui.button_gaussian.clicked.connect(lambda: self.gaussian())
         self.ui.button_adf.clicked.connect(lambda: self.adf())
-        self.ui.button_adf.clicked.connect(lambda: self.dalton())
+        self.ui.button_dalton.clicked.connect(lambda: self.dalton())
 
         self.ui.radio_nbo.setChecked(True)
         self.ui.radio_xy2d.setChecked(True)

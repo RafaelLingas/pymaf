@@ -1510,15 +1510,47 @@ border-color: rgb(16,26,38);
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_14">
           <item>
+           <widget class="QLabel" name="label_15">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222,222,222);</string>
+            </property>
+            <property name="text">
+             <string>Create Runs : </string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <layout class="QHBoxLayout" name="horizontalLayout_13">
             <item>
-             <widget class="QLabel" name="label_15">
+             <widget class="QPushButton" name="button_dalton">
               <property name="styleSheet">
-               <string notr="true">font: 12pt  &quot;Microsoft YaHei UI Light&quot;;
-color: rgb(222,222,222);</string>
+               <string notr="true">QPushButton {
+font: 15pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(222, 222, 222);
+background-color: rgb(18, 39, 64);
+border-style:outset;
+border-width:1.5px;
+border-color: rgb(36, 95, 163);
+border-radius:10px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(36, 96, 163), stop:1 rgb(101, 166, 240));
+}
+
+QPushButton:pressed{
+border-style: inset;
+}</string>
               </property>
               <property name="text">
-               <string>Create Runs : </string>
+               <string>Dalton</string>
               </property>
              </widget>
             </item>

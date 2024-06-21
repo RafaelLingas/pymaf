@@ -8,6 +8,7 @@ import imf_code.adf_nbo
 import imf_code.gaussian_cmo
 import imf_code.gaussian_nbo
 import imf_code.gaussian_no_analysis
+import imf_code.dalton_no_analysis
 import utility_code.symmetry
 import os
 
@@ -18,7 +19,7 @@ class Imf_Window(QtWidgets.QMainWindow):
 
         self.ui.adf_radio.clicked.connect(lambda: self.ui.stacked_method.setCurrentIndex(1) )
         self.ui.gaussian_radio.clicked.connect(lambda: self.ui.stacked_method.setCurrentIndex(2) )
-        # self.ui.orca_radio.clicked.connect(lambda: self.ui.stacked_method.setCurrentIndex(3) )
+        self.ui.dalton_radio.clicked.connect(lambda: self.ui.stacked_method.setCurrentIndex(3) )
 
         self.ui.button_browse.clicked.connect(lambda: self.pick_new())
         self.ui.button_run.clicked.connect(lambda: self.check())
@@ -90,10 +91,10 @@ class Imf_Window(QtWidgets.QMainWindow):
             else:
                 self.ui.textBrowser.setText("Choose Method")
 
-        # elif self.ui.orca_radio.isChecked():
-        #     ### Sometime Implement orca program...........
-        #     self.ui.textBrowser.setText("Not yet")
-        #     pass
+        elif self.ui.dalton_radio.isChecked():
+            self.ui.textBrowser.setText("Calculating")
+            imf_code.dalton_no_analysis.dalton_nics(self.path,self.ui.textBrowser)
+
         else:
             self.ui.textBrowser.setText("Choose Program")
 

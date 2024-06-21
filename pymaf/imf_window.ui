@@ -408,6 +408,24 @@ border: 0.7px solid white;
                    </spacer>
                   </item>
                   <item>
+                   <widget class="QRadioButton" name="dalton_radio">
+                    <property name="styleSheet">
+                     <string notr="true">QRadioButton{
+font: 12pt &quot;Microsoft YaHei UI Light&quot;;
+color: rgb(231, 231, 231);}
+
+QRadioButton:indicator:checked{
+border-radius:6px;
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(53, 156, 230), stop:1 rgb(55, 119, 222));
+border: 0.7px solid white;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Dalton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
                    <spacer name="verticalSpacer_4">
                     <property name="orientation">
                      <enum>Qt::Vertical</enum>
