@@ -303,10 +303,12 @@ class Mimaf_View_Window(QtWidgets.QMainWindow):
                 #print([item.text() for item in self.ui.listfile.selectedItems()])
                 all_files=[]
                 for item in self.ui.listfile.selectedItems():
-                    all_files.append(os.path.join(self.path, self.dir_name+'\\'+item.text()))
+                    join_item=os.path.join(self.dir_name,item.text())
+                    all_files.append(os.path.join(self.path, join_item))
             else:
                 all_files=[]
-                all_files.append(self.path+ '\\'+self.full_name)
+                all_files.append(os.path.join(self.path,self.full_name))
+                # all_files.append(self.path+ '\\'+self.full_name)
 
 
             subtract=self.ui.check_subtract.isChecked()
@@ -389,7 +391,8 @@ class Mimaf_View_Window(QtWidgets.QMainWindow):
     def Change_Dir(self):
         self.dir_name=self.ui.listdir.currentItem().text()
 
-        files=os.listdir(self.path+'\\'+self.dir_name)
+        files=os.listdir(os.path.join(self.path,self.dir_name))
+        # files=os.listdir(self.path+'\\'+self.dir_name)  ### old for windows
 
         def custom_sort(value):
             try:

@@ -78,6 +78,7 @@ class Mimaf_In_Window(QtWidgets.QMainWindow):
 
         self.ui.button_gaussian.clicked.connect(lambda: self.gaussian())
         self.ui.button_adf.clicked.connect(lambda: self.adf())
+        self.ui.button_adf.clicked.connect(lambda: self.dalton())
 
         self.ui.radio_nbo.setChecked(True)
         self.ui.radio_xy2d.setChecked(True)
@@ -128,6 +129,35 @@ class Mimaf_In_Window(QtWidgets.QMainWindow):
         Adf.runs(self.fname,Geo.Atom.atoms,self.ui.openGLWidget.grid_size,self.ui.openGLWidget.grid_step,
         self.ui.openGLWidget.sym,dim,self.ui.openGLWidget.plane,max_ghosts,method,basis_set,
         charge,criteria,memory,nproc,self.ui.textBrowser,both_flag).adf_run(analysis)
+
+        ###after creating runs return to geometry dir (for hmodel to work)
+        os.chdir(self.path)
+
+    def dalton(self):
+
+        both_flag=False
+        analysis="none"
+        dim=self.ui.openGLWidget.dim
+        max_ghosts=int(self.ui.edit_max_ghosts.text())
+        method=self.ui.edit_method.text()
+        basis_set=self.ui.edit_basis_set.text()
+        charge=self.ui.edit_charge.text()
+        criteria=self.ui.edit_criteria.text()
+        memory=self.ui.edit_memory.text()
+        nproc=self.ui.edit_nproc.text()
+
+        size="_"+str(self.ui.openGLWidget.grid_size)+"_"
+        step=str(self.ui.openGLWidget.grid_step).replace(".","")+"_"
+
+        if not os.path.exists('dalton'+self.fname+'_'+analysis+dim+'_'+method+'_'+basis_set+size+step+"inputs"):
+            os.makedirs('dalton'+self.fname+'_'+analysis+dim+'_'+method+'_'+basis_set+size+step+"inputs")
+        os.chdir(self.path +"/"+'dalton'+self.fname+'_'+analysis+dim+'_'+method+'_'+basis_set+size+step+"inputs")
+
+
+        
+        Adf.runs(self.fname,Geo.Atom.atoms,self.ui.openGLWidget.grid_size,self.ui.openGLWidget.grid_step,
+        self.ui.openGLWidget.sym,dim,self.ui.openGLWidget.plane,max_ghosts,method,basis_set,
+        charge,criteria,memory,nproc,self.ui.textBrowser,both_flag).dalton_run()
 
         ###after creating runs return to geometry dir (for hmodel to work)
         os.chdir(self.path)

@@ -18,6 +18,7 @@ class Atom:
         hydro=0.3
         if self.id=="1" or self.id=="H":
             self.id="H"
+            self.charge=1
             self.radius=hydro
             self.color=[220,223,232]
         elif self.id=="2" or self.id=="He":
@@ -38,18 +39,22 @@ class Atom:
             self.color=[255,181,181]
         elif self.id=="6" or self.id=="C":
             self.id='C'
+            self.charge=6
             self.radius=hydro*1.41
             self.color=[144,144,144]
         elif self.id=="7" or self.id=="N":
             self.id="N"
+            self.charge=7
             self.radius=hydro
             self.color=[48,80,248]
         elif self.id=="8" or self.id=="O":
             self.id="O"
+            self.charge=8
             self.radius=hydro
             self.color=[255,13,13]
         elif self.id=="9" or self.id=="F":
             self.id="F"
+            self.charge=9
             self.radius=hydro
             self.color=[144,224,80]
         elif self.id=="10" or self.id=="Ne":
