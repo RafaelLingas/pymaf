@@ -204,10 +204,13 @@ class runs:
         for item in self.atoms:
             if item.id=="C":
                 incr_type+=1
-                a=str(format(float(item.xyz[0]),'.7f'))
-                b=str(format(float(item.xyz[1]),'.7f'))
-                c=str(format(float(item.xyz[2]),'.7f'))
-                self.geom.append(item.id+"\t"+a+"\t"+b+"\t"+c+"\n")
+                a=float(item.xyz[0])
+                b=float(item.xyz[1])
+                c=float(item.xyz[2])
+
+                text=f"{item.id:<10s} {a:15.10f} {b:15.10f} {c:15.10f}"
+
+                self.geom.append(text+"\n")
 
         base_file.append("Charge=6.0 Atoms="+str(incr_type)+" Basis="+self.basis_set+"\n")
         for item in self.geom:
@@ -218,10 +221,13 @@ class runs:
         for item in self.atoms:
             if item.id=="H":
                 incr_type+=1
-                a=str(format(float(item.xyz[0]),'.7f'))
-                b=str(format(float(item.xyz[1]),'.7f'))
-                c=str(format(float(item.xyz[2]),'.7f'))
-                self.geom.append(item.id+"\t"+a+"\t"+b+"\t"+c+"\n")
+                a=float(item.xyz[0])
+                b=float(item.xyz[1])
+                c=float(item.xyz[2])
+
+                text=f"{item.id:<10s} {a:15.10f} {b:15.10f} {c:15.10f}"
+
+                self.geom.append(text+"\n")
 
         base_file.append("Charge=1.0 Atoms="+str(incr_type)+" Basis="+self.basis_set+"\n")
         for item in self.geom:
