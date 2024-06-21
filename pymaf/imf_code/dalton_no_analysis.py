@@ -15,7 +15,7 @@ def dalton_nics(path,text_log):
 
     ###Get a file for geometry and orbitals
     for data_file in dirs:
-        if data_file.endswith(".out"):
+        if data_file.endswith(".out") and 'slurm' not in data_file:
             file_name=data_file
             break
 
@@ -40,8 +40,14 @@ def dalton_nics(path,text_log):
     geom = list(zip(*(row.split() for row in geometry_array)))
     atoms=list(geom[0])
     atoms_x=list(geom[1])
+    atoms_x= [float(x) * 0.529177249 for x in atoms_x]
+    atoms_x= [str(x) for x in atoms_x]
     atoms_y=list(geom[2])
+    atoms_y= [float(y) * 0.529177249 for y in atoms_y]
+    atoms_y= [str(y) for y in atoms_y]
     atoms_z=list(geom[3])
+    atoms_z= [float(z) * 0.529177249 for z in atoms_z]
+    atoms_z= [str(z) for z in atoms_z]
     atoms_N=[]
 
     elements=["H","He","Li","Be","B","C","N","O","F","Ne",
@@ -78,8 +84,8 @@ def dalton_nics(path,text_log):
     yz=[]
     zz=[]
 
-    for data_file in dirs:
-        if data_file.endswith(".out"):
+    for data_file in sorted(dirs):
+        if data_file.endswith(".out") and 'slurm' not in data_file:
             with open(data_file,'r') as input_data:
                 # print("Working on: "+data_file)
 
