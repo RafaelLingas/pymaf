@@ -240,6 +240,7 @@ class runs:
         self.geom=[]
         for type in atom_types:
             incr_type=0
+            
             for item in self.atoms:
                 if item.id==type:
                     incr_type+=1
@@ -256,6 +257,7 @@ class runs:
             base_file.append("Charge="+str(charge)+" Atoms="+str(incr_type)+" Basis="+self.basis_set+"\n")
             for item in self.geom:
                 base_file.append(item)
+            self.geom=[]
         #### END GEOMETRY   ###############
 
 

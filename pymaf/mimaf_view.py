@@ -929,7 +929,7 @@ class GLWidget_view(QOpenGLWidget):
             data, width, height = view_funcs.myglReadColorBuffer(buffers)
             image = Image.frombytes("RGBA", (width, height), data)
             image = ImageOps.flip(image) # in my case image is flipped top-bottom for some reason
-            image = image.resize((int(width), int(height)), Image.ANTIALIAS)
+            image = image.resize((int(width), int(height)), Image.LANCZOS)
             #image.save('Image.png', 'PNG')
             image.save(self.image_name+".png", 'PNG')
             os.chdir(self.path)

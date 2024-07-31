@@ -70,6 +70,7 @@ class Atom:
             self.radius=hydro
             self.color=[138,255,0]
         elif self.id=="17" or self.id=="Cl":
+            self.charge=17
             self.id="Cl"
             self.radius=hydro*1.65
             self.color=[31,240,31]

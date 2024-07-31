@@ -78,7 +78,7 @@ def gaussian_nmr(path,text_log):
     yz=[]
     zz=[]
 
-    for data_file in dirs:
+    for data_file in sorted(dirs):
         if data_file.endswith(".out"):
             with open(data_file,'r') as input_data:
                 # print("Working on: "+data_file)
