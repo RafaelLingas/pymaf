@@ -69,6 +69,11 @@ class Atom:
             self.id="Mg"
             self.radius=hydro
             self.color=[138,255,0]
+        elif self.id=="16" or self.id=="S":
+            self.charge=16
+            self.id="S"
+            self.radius=hydro*1.65
+            self.color=[255,255,48]
         elif self.id=="17" or self.id=="Cl":
             self.charge=17
             self.id="Cl"
@@ -132,7 +137,16 @@ class Cylinder:
         for atom1 in atoms_:
             for atom2 in atoms_:
                 dista=Cylinder.dist(atom1,atom2)
-                if dista<(min_dist+min_dist/1.57) and dista!=0:
+                param=1.57
+                ###try to make longer bonds for heavier atoms
+                if int(atom1.charge)>15 or int(atom2.charge)>15:
+                    param=1.44
+                if int(atom1.charge)==1 or int(atom2.charge)==1:
+                    param=1.60
+                if int(atom1.charge)==6 and int(atom2.charge)==6:
+                    param=1.60
+
+                if dista<(min_dist+min_dist/param) and dista!=0:
                     vx=(atom2.xyz[0]-atom1.xyz[0])
                     vy=(atom2.xyz[1]-atom1.xyz[1])
                     vz=(atom2.xyz[2]-atom1.xyz[2])
