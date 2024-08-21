@@ -146,7 +146,7 @@ def cmo(path,text_log):
     adf.Get_Adf_Geom(path,dirs,"cmo_run")
 
     ##starting main loop
-    for data_file in dirs:
+    for data_file in sorted(dirs):
         if data_file.endswith(".out"):
             file_search_cmo(data_file)
 
