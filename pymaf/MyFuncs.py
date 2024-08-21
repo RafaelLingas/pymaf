@@ -115,7 +115,7 @@ def Create_Files_CMO_Adf(path,z,orbitals,homo,totals):
             os.makedirs(components[m])
         os.chdir(path+"/cmo_run/"+components[m])
         for n in range(0,2):
-            for i in range(0,homo+1):   ### for i in range(homo-10,homo+1):
+            for i in range(1,homo+1):   ### for i in range(homo-10,homo+1):
                 output=open(para_dia[n]+'_'+str(i)+".txt","a")
                 for k in range(0,z):
                     output.write(str(-1*orbitals[i,m,n,k])+"\n")

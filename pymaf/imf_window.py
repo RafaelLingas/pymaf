@@ -53,10 +53,12 @@ class Imf_Window(QtWidgets.QMainWindow):
                 #self.ui.textBrowser
             elif self.ui.adf_cmo_radio.isChecked():
                 self.ui.textBrowser.setText("Calculating..")
-                try:
-                    imf_code.adf_cmo.cmo(self.path,self.ui.textBrowser)
-                except Exception as e:
-                    self.ui.textBrowser.setText(str(e))
+                #
+                imf_code.adf_cmo.cmo(self.path,self.ui.textBrowser)
+                # try:
+                #     imf_code.adf_cmo.cmo(self.path,self.ui.textBrowser)
+                # except Exception as e:
+                #     self.ui.textBrowser.setText(str(e))
                 ### Run adf cmo
             else:
                 self.ui.textBrowser.setText("Choose Method")
