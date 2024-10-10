@@ -23,18 +23,22 @@ class Atom:
             self.color=[220,223,232]
         elif self.id=="2" or self.id=="He":
             self.id='He'
+            self.charge=2
             self.radius=hydro
             self.color=[217,255,255]
         elif self.id=="3" or self.id=="Li":
             self.id='Li'
+            self.charge=3
             self.radius=hydro
             self.color=[204,128,255]
         elif self.id=="4" or self.id=="Be":
             self.id='Be'
+            self.charge=4
             self.radius=hydro
             self.color=[194,255,0]
         elif self.id=="5" or self.id=="B":
             self.id='B'
+            self.charge=5
             self.radius=hydro*1.31
             self.color=[255,181,181]
         elif self.id=="6" or self.id=="C":
@@ -59,36 +63,42 @@ class Atom:
             self.color=[144,224,80]
         elif self.id=="10" or self.id=="Ne":
             self.id="Ne"
+            self.charge=10
             self.radius=hydro
             self.color=[179,227,245]
         elif self.id=="11" or self.id=="Na":
             self.id="Na"
+            self.charge=11
             self.radius=hydro
             self.color=[171,92,242]
         elif self.id=="12" or self.id=="Mg":
             self.id="Mg"
+            self.charge=12
             self.radius=hydro
             self.color=[138,255,0]
         elif self.id=="16" or self.id=="S":
-            self.charge=16
             self.id="S"
+            self.charge=16
             self.radius=hydro*1.65
             self.color=[255,255,48]
         elif self.id=="17" or self.id=="Cl":
-            self.charge=17
             self.id="Cl"
+            self.charge=17
             self.radius=hydro*1.65
             self.color=[31,240,31]
         elif self.id=="20" or self.id=="Ca":
             self.id="Ca"
+            self.charge=20
             self.radius=hydro*1.62
             self.color=[61,255,0]
         elif self.id=="53" or self.id=="I":
             self.id="I"
+            self.charge=53
             self.radius=hydro*1.65
             self.color=[148,0,148]
         else:
             # self.id="H"
+            self.charge=1
             self.radius=hydro
             self.color=[220,223,232]
         Atom.atoms.append(self)
